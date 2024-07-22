@@ -43,3 +43,7 @@ Make sure you have the following installed on your local machine:
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/portfolio-website.git
+2. ```sh
+   cd client
+3. ```sh
+   npm start 
