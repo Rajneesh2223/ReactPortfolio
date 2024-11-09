@@ -1,103 +1,196 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaHandPointRight } from "react-icons/fa";
-import { IoIosThunderstorm } from "react-icons/io";
+import { motion } from 'framer-motion';
+import { FaBriefcase, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { HiOutlineLightBulb } from "react-icons/hi";
 
 const experiences = [
-    
-    {
-      title: "Intern Frontend Developer",
-      company: "Aeonaxy Tech PVT. LTD.",
-      duration: "Apr 2024 - May 2024",
-      responsibilities: [
-        "Designed and implemented a responsive homepage based on Figma designs.",
-        "Ensured cross-browser compatibility."
-      ]
-    },
-    {
-      title: "Participant",
-      company: "Summer Winter of Code (SWOC’23)",
-      duration: "",
-      responsibilities: [
-        "Contributed to projects like Mindspace and PaletteGram.",
-        "Optimized front-end performance and collaborated globally."
-      ]
-    },
-    {
-        title: "Participant",
-        company: "Summer Summer  of Code (SSOC’24)",
-        duration: "",
-        responsibilities: [
-          "Contributed to projects like Mindspace and PaletteGram.",
-          "Optimized front-end performance and collaborated globally."
-        ]
+  {
+    type: "Full-Time",
+    position: "Intern Full-Stack Developer",
+    company: "Nous (Start Up)",
+    project: "Project Nous",
+    duration: "July 2024 - Present",
+    responsibilities: [
+      "Designed and implemented RESTful APIs and SQL solutions",
+      "Gained hands-on experience with Git for version control and GitHub for project collaboration",
+      "Created full-fledged website designs for the project",
+      "Collaborated with a team of 4 developers, participating in code reviews and Agile sprints"
+    ],
+    links: {
+      live: "https://nous-project.com",
+      github: "https://github.com/your-repo/nous"
+    }
+  },
+  {
+    type: "Full-Time",
+    position: "Intern Full-Stack Developer",
+    company: "SynthLeap PVT. LTD.",
+    project: "KnowledgeAI",
+    duration: "July 2024 - Present",
+    responsibilities: [
+      "Building a standout website with React, Framer Motion, and Tailwind CSS",
+      "Developing scalable backend using FastAPI",
+      "Creating an advertisement page for Pracco Services Company",
+      "Designed and implemented client templates on Webflow"
+    ],
+    links: {
+      live: "https://knowledgeai.com",
+      github: "https://github.com/your-repo/knowledge-ai"
+    }
+  },
+  {
+    type: "Internship",
+    position: "Frontend Developer",
+    company: "Aeonaxy Tech PVT. LTD.",
+    duration: "April 2024 - May 2024",
+    responsibilities: [
+      "Designed and implemented responsive homepage, improving user engagement",
+      "Ensured cross-browser compatibility and responsiveness"
+    ]
+  },
+  {
+    type: "Open Source",
+    position: "Contributor",
+    company: "Various Programs",
+    duration: "2023 - 2024",
+    contributions: [
+      {
+        program: "Social Summer Of Code (SSOC'23)",
+        link: "view-link-1"
       },
-    {
-      title: "Contributor",
-      company: "Hacktoberfest 2023",
-      duration: "",
-      responsibilities: [
-        "Actively contributed to multiple open-source repositories."
-      ]
-    },
-   
-  ];
+      {
+        program: "Social Winter Of Code (SWOC'24)",
+        link: "view-link-2"
+      },
+      {
+        program: "HacktoberFest'23",
+        link: "view-link-3"
+      }
+    ]
+  }
+];
 
-  const ExperienceCard = ({ title, company, duration, responsibilities }) => {
-    return (
-      <motion.div
-        className="border border-gray-300 rounded-lg p-4 mb-4 ml-4 bg-custom-gradient shadow-md"
-        id='contact'
-        whileHover={{ scale: 1.05 }} // Hover animation: scale up slightly
-        transition={{ duration: 0.2 }} // Transition duration for hover animation
-      >
-        <div className="flex items-center mb-2">
-          <FaHandPointRight className="text-orange-400 mr-2" />
-          <h3 className="text-xl font-semibold text-white-900">{title}</h3>
-        </div>
-        <h4 className="text-lg font-medium text-white-700">{company}</h4>
-        <p className="text-sm text-white-600">{duration}</p>
-        <ul className="list-disc list-inside mt-2 opacity-50">
-          {responsibilities.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </motion.div>
-    );
-  };
-  
-  const MyExperience = () => {
-    return (
-      <div className="container mx-auto px-4 py-10 bg-custom-gradient text-white" id='experience'>
-        <h1 className="text-5xl text-orange-400 text-center font-bold">My Experiences</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-10'>
-          <div className=' '>
-            <h1 className='text-6xl font-normal leading-tight flex justify-center '>
-              Boost Your Brand <br />
-              with my extensive <br />
-              expertise in <br />
-              Coding
-            </h1>
-            <div className='flex justify-center mt-10'>
-              <IoIosThunderstorm style={{ color: 'orange', fontSize: '400px' }} />
-            </div>
+const ExperienceCard = ({ experience }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl p-6 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border border-orange-500/20"
+    >
+      <div className="flex items-start justify-between">
+        <div className="flex items-center space-x-3">
+          <div className="p-2 bg-orange-500/10 rounded-lg">
+            <FaBriefcase className="text-orange-400 text-xl" />
           </div>
-          <div className='flex flex-col space-y-4 border-l text-white '>
-            <AnimatePresence>
-              {experiences.map((exp, index) => (
-                <ExperienceCard
-                  key={index}
-                  title={exp.title}
-                  company={exp.company}
-                  duration={exp.duration}
-                  responsibilities={exp.responsibilities}
-                />
-              ))}
-            </AnimatePresence>
+          <div>
+            <h3 className="text-xl font-bold text-white">{experience.position}</h3>
+            <p className="text-orange-400">{experience.company}</p>
           </div>
         </div>
+        <span className="text-sm text-gray-400">{experience.duration}</span>
       </div>
-    );
-  };
-  
-  export default MyExperience;
+
+      {experience.project && (
+        <div className="mt-4 bg-orange-500/5 rounded-lg p-3">
+          <p className="text-sm text-orange-300 font-medium">Project: {experience.project}</p>
+        </div>
+      )}
+
+      <div className="mt-4 space-y-2">
+        {experience.responsibilities?.map((resp, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: index * 0.1 }}
+            className="flex items-start space-x-2"
+          >
+            <HiOutlineLightBulb className="text-orange-400 mt-1 flex-shrink-0" />
+            <p className="text-gray-300 text-sm">{resp}</p>
+          </motion.div>
+        ))}
+      </div>
+
+      {experience.contributions && (
+        <div className="mt-4 space-y-2">
+          {experience.contributions.map((contribution, index) => (
+            <div key={index} className="flex items-center justify-between bg-orange-500/5 rounded-lg p-3">
+              <span className="text-gray-300">{contribution.program}</span>
+              <a
+                href={contribution.link}
+                className="text-orange-400 hover:text-orange-300 flex items-center space-x-1"
+              >
+                <span>View</span>
+                <FaExternalLinkAlt className="text-sm" />
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {experience.links && (
+        <div className="mt-4 flex space-x-4">
+          {experience.links.live && (
+            <a
+              href={experience.links.live}
+              className="flex items-center space-x-2 text-sm text-orange-400 hover:text-orange-300"
+            >
+              <FaExternalLinkAlt />
+              <span>Live Demo</span>
+            </a>
+          )}
+          {experience.links.github && (
+            <a
+              href={experience.links.github}
+              className="flex items-center space-x-2 text-sm text-orange-400 hover:text-orange-300"
+            >
+              <FaGithub />
+              <span>Source Code</span>
+            </a>
+          )}
+        </div>
+      )}
+    </motion.div>
+  );
+};
+
+const MyExperience = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 py-20 px-4 lg:px-8" id="experience">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="max-w-7xl mx-auto"
+      >
+        <div className="text-center mb-16">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-5xl font-bold"
+          >
+            <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+              Professional Journey
+            </span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="mt-4 text-gray-400 text-lg"
+          >
+            Building digital experiences that make a difference
+          </motion.p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {experiences.map((experience, index) => (
+            <ExperienceCard key={index} experience={experience} />
+          ))}
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default MyExperience;
