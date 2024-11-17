@@ -34,18 +34,19 @@ const ContactCard = ({ icon: Icon, title, value, link, color }) => (
 const Connect = () => {
   const skills = [
     "UI/UX Design", "Web Design", "React.js", "Next.js",
-    "Frontend Development", "Responsive Design", "TypeScript", "Tailwind CSS"
+    "Frontend Development", "Responsive Design", "TypeScript", "Tailwind CSS","Firebase","Backend Development"
+    ,"Bootstrap","Framer Motion","Node JS","Express JS","Fastapi","MongoDB","MySql","JWT","Github","Git","Postman",
+    "Firebase Firestore","Docker","Redux"
   ];
 
   return (
     <div className="bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen relative overflow-hidden" id="connect">
-      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-blue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-purple-500/5 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Skills Section */}
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -72,7 +73,7 @@ const Connect = () => {
         </motion.div>
       </motion.div>
 
-      {/* Contact Section */}
+      
       <div className="relative px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -124,7 +125,7 @@ const Connect = () => {
             />
           </div>
 
-          {/* Social Links */}
+         
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -138,13 +139,7 @@ const Connect = () => {
             >
               <FaLinkedin className="text-2xl" />
             </motion.a>
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.2 }}
-              className="text-gray-400 hover:text-blue-400 transition-colors"
-            >
-              <FaTwitter className="text-2xl" />
-            </motion.a>
+            
           </motion.div>
         </motion.div>
       </div>

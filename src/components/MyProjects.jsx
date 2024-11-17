@@ -1,64 +1,130 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react';
-import project1 from '../assests/project1.png'
-import project2 from '../assests/project2.png'
+import airbnb from '../assests/project/airbnb.png'
+import notekeeping from '../assests/project/notekeeping.png'
+import rickymorty from '../assests/project/rickymorty.png'
+import shopperApp from "../assests/project/shopperApp.png"
+import knowledgeai from '../assests/project/knowledgeai.png'
+import pracco from "../assests/project/pracco.png"
+import advertisement from '../assests/project/advertisement.png'
+import ecommerce from '../assests/project/ecommerce.png'
+import portfolio from '../assests/project/portfolio.png'
+import todoapp from '../assests/project/todoapp.png'
+import githubfinderapp from '../assests/project/githubfinderapp.png'
+import wordleapp from '../assests/project/wordleapp.png'
 
 const projects = [
   {
     id: 1,
     name: 'FullStack AirBnb App',
-    description: 'A complete clone of Airbnb with booking functionality, user authentication, and property management.',
-    photo: project1,
-    liveLink: 'https://your-airbnb-clone.com',
-    githubLink: 'https://github.com/yourusername/airbnb-clone',
-    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS']
+    description: "An inspired Airbnb clone with a sleek UI, featuring backend-powered user authentication, photo uploads, and booking management.",
+    photo: airbnb,
+    liveLink: 'https://graceful-dasik-f2b0d5.netlify.app/',
+    githubLink: 'https://github.com/Rajneesh2223/FullStackBookingApp',
+    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS','Express Js','bcrypt js']
   },
   {
     id: 2,
-    name: 'Frontend Calendly Homepage',
+    name: 'NoteKeeping Backend App ',
     description: 'Responsive recreation of Calendly\'s homepage with modern UI components and animations.',
-    photo: project2,
-    liveLink: 'https://your-calendly-clone.com',
-    githubLink: 'https://github.com/yourusername/calendly-clone',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion']
+    photo: notekeeping,
+    liveLink: 'https://profound-manatee-55952e.netlify.app/notes',
+    githubLink: 'https://github.com/Rajneesh2223/NoteKeepingApp',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion' , "Firebase " , "firebase auth ", "javascript"]
   },
   {
     id: 3,
-    name: 'Frontend Calendly Homepage',
-    description: 'Responsive recreation of Calendly\'s homepage with modern UI components and animations.',
-    photo: project2,
-    liveLink: 'https://your-calendly-clone.com',
-    githubLink: 'https://github.com/yourusername/calendly-clone',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion']
+    name: 'Rick and Morty Explorer App ',
+    description:"A responsive Rick and Morty Explorer app with modern UI, React Hooks, and interactive animations.",
+    photo: rickymorty,
+    liveLink: 'https://strong-maamoul-9efbd4.netlify.app/',
+    githubLink: 'https://github.com/Rajneesh2223/Rickipedia-App',
+    tags: ['React', 'Tailwind CSS', 'React Hooks ' , "lucide-React "]
   },
   {
     id: 4,
-    name: 'Frontend Calendly Homepage',
-    description: 'Responsive recreation of Calendly\'s homepage with modern UI components and animations.',
-    photo: project2,
-    liveLink: 'https://your-calendly-clone.com',
-    githubLink: 'https://github.com/yourusername/calendly-clone',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion']
+    name: 'Full Stack Ecommerce App ',
+    description: '"A full-stack e-commerce application with a responsive design, modern UI components, smooth animations, and user-friendly features."',
+    photo: shopperApp,
+    liveLink: '',
+    githubLink: 'https://github.com/Rajneesh2223/Full-Stack-Commerce-Project',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion','Node.js','Express.js','MongoDB','JWT','Mongoose']
   },
   {
     id: 5,
-    name: 'Frontend Calendly Homepage',
-    description: 'Responsive recreation of Calendly\'s homepage with modern UI components and animations.',
-    photo: project2,
-    liveLink: 'https://your-calendly-clone.com',
-    githubLink: 'https://github.com/yourusername/calendly-clone',
+    name: 'Knowledge Ai Website ',
+    description: '"A responsive and visually engaging homepage for Knowledge AI, featuring modern UI components, smooth animations, and seamless interactivity."',
+    photo: knowledgeai,
+    liveLink: 'https://lucent-conkies-307fc8.netlify.app/',
+    githubLink: 'https://github.com/KnowledgeEdgeAI/Web-dev',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion']
+  },{
+    id: 6,
+    name: 'My Portfolio App ',
+    description: '"A personal portfolio app showcasing projects, skills, and achievements, built with React, Tailwind CSS, and Framer Motion for a modern and interactive user experience."',
+    photo: portfolio,
+    liveLink: '',
+    githubLink: 'https://github.com/Rajneesh2223/ReactPortfolio',
     tags: ['React', 'Tailwind CSS', 'Framer Motion']
   },
   {
-    id: 6,
-    name: 'Frontend Calendly Homepage',
-    description: 'Responsive recreation of Calendly\'s homepage with modern UI components and animations.',
-    photo: project2,
-    liveLink: 'https://your-calendly-clone.com',
-    githubLink: 'https://github.com/yourusername/calendly-clone',
+    id: 7,
+    name: 'Pracco',
+    description: 'Welcome to Pracco, a unified platform where individuals from diverse backgrounds come together to foster trust and excellence in the market ',
+    photo: pracco,
+    liveLink: 'https://pracco.in/',
+    githubLink: 'https://github.com/KnowledgeEdgeAI/Pracco-website',
     tags: ['React', 'Tailwind CSS', 'Framer Motion']
   },
+  {
+    id: 8,
+    name: 'Pracco Advertisement Page',
+    description: 'Welcome to Pracco, a unified platform where individuals from diverse backgrounds come together to foster trust and excellence in the market ',
+    photo:advertisement,
+    liveLink: 'https://pracco.in/advPage/advertisement.html',
+    githubLink: 'https://github.com/KnowledgeEdgeAI/Pracco-website/tree/main/client/advPage',
+    tags: ['HTML', 'Bootstrap ','CSS']
+  },
+  {
+    id: 9,
+    name: 'Pracco Ecommerce Page ',
+    description: 'Welcome to Pracco, a unified platform where individuals from diverse backgrounds come together to foster trust and excellence in the market ',
+    photo:ecommerce,
+    liveLink: 'https://pracco.in/ecommercePage/ecommerce.html',
+    githubLink: 'https://github.com/KnowledgeEdgeAI/Pracco-website/tree/main/client/advPage',
+    tags: ['HTML', 'Bootstrap ','CSS']
+  },
+  {
+    id: 10,
+    name: 'Task List App (TO DO Task)',
+    description: 'ask List App (TO DO Task) is a user-friendly application designed to help individuals organize and manage their tasks efficiently. Built with HTML, Bootstrap, and CSS, the app ensures a responsive and visually appealing interface.',
+    photo:todoapp,
+    liveLink: 'https://eclectic-faun-a30d88.netlify.app/',
+    githubLink: 'https://github.com/Rajneesh2223/To-Do-List-Web-dev-project',
+    tags: ['HTML', 'Bootstrap ','CSS','React js ' , 'Hooks']
+  },
+  {
+    id: 11,
+    name: "Github Finder App",
+    description: "Github Finder App is a powerful tool designed to search for GitHub users and display their profile details with ease. Built using React.js, Hooks, and styled with HTML, Bootstrap, and CSS, this app offers a smooth and responsive user experience. Users can search for GitHub users and view their repositories, followers, and other details directly from the interface.",
+    photo: githubfinderapp,
+    liveLink: "https://lively-genie-06e0d7.netlify.app/",
+    githubLink: "https://github.com/Rajneesh2223/Github-Finder-App",
+    tags: ["HTML", "Bootstrap", "CSS", "React.js", "Hooks"]
+  },
+  {
+    id: 12,
+    name: "Wordle Game",
+    description: "Wordle Game is a fun and engaging word puzzle game where players must guess a 5-letter word in six attempts. Built with React.js and styled using HTML, CSS, and Bootstrap, the app provides a smooth and interactive user experience. Players receive visual feedback on each guess, making it a challenging and enjoyable game for users of all ages.",
+    photo: wordleapp,
+    liveLink: "https://clever-daffodil-1bb752.netlify.app/",
+    githubLink: "https://github.com/Rajneesh2223/Github-Finder-App",
+    tags: ["HTML", "Bootstrap", "CSS", "React.js", "Hooks"]
+  }
+  
+  
+
   
 ];
 
@@ -71,7 +137,7 @@ const ProjectCard = ({ project }) => {
     >
       <div className="relative h-64 overflow-hidden">
         <img
-          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
           src={project.photo}
           alt={project.name}
         />

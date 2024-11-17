@@ -135,10 +135,10 @@ const Home = () => {
                 </motion.button>
 
                 <div className="flex gap-4">
-                  {[FaGithub, FaLinkedin].map((Icon, index) => (
+                  {[FaGithub].map((Icon, index) => (
                     <motion.a
                       key={index}
-                      href="#"
+                      href="https://github.com/Rajneesh2223"
                       className="p-3 bg-gray-800/50 rounded-full hover:bg-gray-700/50 transition-colors"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
@@ -150,7 +150,7 @@ const Home = () => {
               </motion.div>
             </motion.div>
 
-            {/* Right Content */}
+       
             <motion.div 
               className="flex-1 relative z-10"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -178,7 +178,7 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* Location Badge */}
+           
             <motion.div 
               className="absolute bottom-32 left-1/2 transform -translate-x-1/2
                          bg-gray-800/80 backdrop-blur-sm border border-gray-700

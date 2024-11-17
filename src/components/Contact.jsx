@@ -11,14 +11,13 @@ const experiences = [
     project: "Project Nous",
     duration: "July 2024 - Present",
     responsibilities: [
-      "Designed and implemented RESTful APIs and SQL solutions",
       "Gained hands-on experience with Git for version control and GitHub for project collaboration",
       "Created full-fledged website designs for the project",
       "Collaborated with a team of 4 developers, participating in code reviews and Agile sprints"
     ],
     links: {
-      live: "https://nous-project.com",
-      github: "https://github.com/your-repo/nous"
+      live: "https://hustlr-pro.webflow.io/",
+      github: "https://github.com/nousmnky/nous.shortcuts"
     }
   },
   {
@@ -35,7 +34,7 @@ const experiences = [
     ],
     links: {
       live: "https://knowledgeai.com",
-      github: "https://github.com/your-repo/knowledge-ai"
+      github: "https://github.com/KnowledgeEdgeAI/Web-dev"
     }
   },
   {
@@ -55,16 +54,20 @@ const experiences = [
     duration: "2023 - 2024",
     contributions: [
       {
+          program :"Finalist in Medecro Hackathon (2024)",
+          link:"https://drive.google.com/file/d/1ogOSSbmI88AHQaiOwmtE4FPHtxlAOdGN/view?usp=drive_link"
+      },
+      {
         program: "Social Summer Of Code (SSOC'23)",
-        link: "view-link-1"
+        link: "https://drive.google.com/file/d/1qWjIEsUaPDIoQ3c6NaHSFDnO6zFRL-2B/view?usp=sharing"
       },
       {
         program: "Social Winter Of Code (SWOC'24)",
-        link: "view-link-2"
+        link: "https://certificate.givemycertificate.com/c/b8d2f0f0-4e94-40f1-a75d-c0fa530fe921"
       },
       {
         program: "HacktoberFest'23",
-        link: "view-link-3"
+        link: "https://drive.google.com/file/d/1mp_LVI4qgYH-R9Kr_I0Q35iwhScJ29jl/view?usp=sharing"
       }
     ]
   }

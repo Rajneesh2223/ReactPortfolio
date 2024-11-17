@@ -114,7 +114,7 @@ const About = () => {
               I'm a creative frontend developer focusing on React.js with proficiency in HTML, CSS, JavaScript, and various front-end frameworks.
             </p>
             <p>
-              I have been working with web technologies for over 3 years. During this time, I have gained hands-on experience in developing full-stack web applications .
+              I have been working with web technologies for over 1 years. During this time, I have gained hands-on experience in developing full-stack web applications .
             </p>
             <p className="italic text-orange-300">
               I'm passionate about creating engaging user experiences and am always eager to learn new technologies and improve my skills.
